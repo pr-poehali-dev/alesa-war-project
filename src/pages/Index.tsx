@@ -91,9 +91,12 @@ const Index = () => {
             История о девушке, которая обрела силу защищать вселенную от сил тьмы
           </p>
           <div className="flex gap-4 justify-center animate-fade-in" style={{ animationDelay: '0.6s' }}>
-            <Button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-8 py-6 text-lg">
-              <Icon name="Play" className="mr-2" size={20} />
-              Смотреть аниме
+            <Button 
+              onClick={() => window.location.href = '/battle'}
+              className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-8 py-6 text-lg"
+            >
+              <Icon name="Swords" className="mr-2" size={20} />
+              Начать битву
             </Button>
             <Button variant="outline" className="border-purple-400 text-purple-200 hover:bg-purple-900/50 px-8 py-6 text-lg">
               <Icon name="BookOpen" className="mr-2" size={20} />
